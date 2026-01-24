@@ -1410,12 +1410,17 @@
         const mobileBtn = document.querySelector(".mobile-get-started");
 
         window.addEventListener("scroll", () => {
+            // Check if screen is mobile/tablet (less than 992px)
+            const isMobile = window.innerWidth < 992;
+
             if (window.scrollY >= 150) {
                 header.classList.add("cx-header-sticky");
-                mobileBtn.classList.add("show"); // Show button on scroll
+                if (isMobile) {
+                    mobileBtn.classList.add("show"); // Show only on mobile
+                }
             } else {
                 header.classList.remove("cx-header-sticky");
-                mobileBtn.classList.remove("show"); // Hide button at top
+                mobileBtn.classList.remove("show"); // Hide at top
             }
         });
     </script>
