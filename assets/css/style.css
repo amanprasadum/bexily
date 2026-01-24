@@ -28,7 +28,8 @@
         --text-light: #94a3b8;
         --border-color: #e2e8f0;
     }
-    html{
+
+    html {
         overflow-x: hidden;
     }
 
@@ -43,9 +44,10 @@
     /* ========================================
    NAVIGATION STYLES 
 ======================================== */
-    .navbar-logo{
+    .navbar-logo {
         width: 173px;
     }
+
     .top-bar {
         background: var(--primary-dark);
         color: var(--white);
@@ -148,8 +150,8 @@
 
     @media (min-width: 1200px) and (max-width: 1399px) {
         .mega-menu {
-           width: 521px;
-           left: 61%;
+            width: 521px;
+            left: 61%;
 
         }
     }
@@ -275,6 +277,19 @@
         margin-top: 0;
     }
 
+    /* --- */
+    .mobile-get-started {
+        font-size: 14px;
+        font-weight: 600;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .mobile-get-started.show {
+        display: inline-block !important;
+    }
+
+    /* --- */
+
     /* ========================================
  /* ========================================
    NEW MODERN HERO SECTION - SECOND SLIDER (UPDATED)
@@ -294,7 +309,7 @@
     }
 
     .hero-heading-second-slider {
-       font-size: 42px;
+        font-size: 42px;
         font-weight: 600;
         line-height: 1.2;
         margin-bottom: 1.5rem;
@@ -2505,7 +2520,7 @@
 
     .footer-bg {
         position: relative;
-       
+
         /* background-image: url('tech-bg.jpg'); */
         background-image: url('../images/tech-bg-2.png');
         background-size: cover;
