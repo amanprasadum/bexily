@@ -278,16 +278,24 @@
     }
 
     /* --- */
+   .mobile-get-started {
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.cx-header-sticky .mobile-get-started {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+@media (min-width: 992px) {
     .mobile-get-started {
-        font-size: 14px;
-        font-weight: 600;
-        transition: opacity 0.3s ease, transform 0.3s ease;
+        display: none !important;
     }
-
-    .mobile-get-started.show {
-        display: inline-block !important;
-    }
-
+}
     /* --- */
 
     /* ========================================
