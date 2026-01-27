@@ -40,8 +40,12 @@
             </button>
 
             <!-- DESKTOP NAV -->
+            <!-- DESKTOP NAV -->
             <div class="collapse navbar-collapse d-none d-lg-flex">
                 <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
 
                     <li class="nav-item dropdown position-static">
                         <a class="nav-link dropdown-toggle fw-semibold" href="#">
@@ -50,8 +54,13 @@
 
                         <div class="dropdown-menu mega-menu shadow border-0 p-4">
                             <div class="row g-4">
+                                <div class="col-md-12 mb-3">
+                                    <a href="service.php" class="text-decoration-none">
+                                        <h6 class="fw-bold mb-0" style="color: var(--primary-blue);">ERP Services →</h6>
+                                    </a>
+                                </div>
                                 <div class="col-md-6">
-                                    <h6 class="fw-bold mb-3">ERP Services</h6>
+                                    <h6 class="fw-bold mb-3">Software Solutions</h6>
                                     <ul class="list-unstyled mega-list">
                                         <li><a href="#">Web Development</a></li>
                                         <li><a href="#">App Development</a></li>
@@ -75,6 +84,7 @@
                             </div>
                         </div>
                     </li>
+
                     <li class="nav-item dropdown position-static">
                         <a class="nav-link dropdown-toggle fw-semibold" href="#">
                             Industry
@@ -83,15 +93,13 @@
                         <div class="dropdown-menu mega-menu shadow border-0 p-4">
                             <div class="row g-4">
                                 <div class="col-md-6">
-                                    <h6 class="fw-bold mb-3">Industry</h6>
                                     <ul class="list-unstyled mega-list">
                                         <li><a href="#">Ecommerce and Retail</a></li>
-                                        <li><a href="#">Logistics Transportation</a></li>
+                                        <li><a href="#">Logistics & Transportation</a></li>
                                         <li><a href="#">Real Estate</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6">
-                                    <h6 class="fw-bold mb-3">Industry</h6>
                                     <ul class="list-unstyled mega-list">
                                         <li><a href="#">Manufacturing</a></li>
                                         <li><a href="#">Education</a></li>
@@ -102,11 +110,9 @@
                         </div>
                     </li>
 
-                    <!-- <li class="nav-item"><a class="nav-link" href="#industry">Industry</a></li> -->
-                    <!--<li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>-->
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
 
                     <li class="nav-item ms-lg-3">
                         <a class="btn btn-warning rounded-pill px-4" href="#quote">Schedule A Call</a>
@@ -1416,7 +1422,7 @@
             if (window.scrollY >= 150) {
                 header.classList.add("cx-header-sticky");
                 if (isMobile) {
-                    mobileBtn.classList.add("show"); 
+                    mobileBtn.classList.add("show");
                 }
             } else {
                 header.classList.remove("cx-header-sticky");
