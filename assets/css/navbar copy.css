@@ -61,34 +61,24 @@
 }
 
 /* ===== NAVBAR SMOOTH TOP ENTRY ON SCROLL ===== */
-/* ===== NAVBAR ENTRY ANIMATION ===== */
 .cx-main-header {
-    transform: translateY(-100%);
-    animation: cx-slide-down-entry 0.6s ease forwards;
-    transition: box-shadow 0.3s ease;
+    transform: translateY(0);
+    transition: transform 0.45s ease, box-shadow 0.3s ease;
     z-index: 999;
     border-bottom: 1px solid #e3e3e3;
 }
 
-@keyframes cx-slide-down-entry {
-    to {
-        transform: translateY(0);
-    }
+.cx-header-sticky {
+    animation: cx-slide-from-top 0.45s ease forwards;
 }
 
-/* Mobile sticky behavior */
-@media (max-width: 991px) {
-    .cx-header-sticky {
-        animation: cx-slide-from-top 0.45s ease forwards;
+@keyframes cx-slide-from-top {
+    from {
+        transform: translateY(-100%);
     }
 
-    @keyframes cx-slide-from-top {
-        from {
-            transform: translateY(-100%);
-        }
-        to {
-            transform: translateY(0);
-        }
+    to {
+        transform: translateY(0);
     }
 }
 
