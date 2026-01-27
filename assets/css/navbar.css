@@ -348,7 +348,8 @@
 }
 
 .mobile-call-btn {
-    background-color: #0a257c;
+    /* background-color: #0a257c; */
+    background: linear-gradient(135deg, #198754 0%, #1e3a8a 100%) !important;
 }
 
 .mobile-get-started.show {
