@@ -246,3 +246,143 @@
     }
 
     /* --- */
+
+
+    /* ========================================
+   ENHANCED MEGA MENU STYLES
+======================================== */
+
+/* Desktop Mega Menu Links with Icons */
+.mega-menu-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #303030;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.mega-menu-link:hover {
+    background-color: #f8fafc;
+    color: var(--primary-blue);
+    transform: translateX(4px);
+}
+
+.mega-icon {
+    font-size: 18px;
+    margin-right: 10px;
+    min-width: 24px;
+    display: inline-block;
+}
+
+/* ERP Menu Item Styling */
+.erp-menu-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 16px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    border-left: 4px solid var(--primary-blue);
+    transition: all 0.3s ease;
+}
+
+.erp-menu-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(30, 64, 175, 0.15);
+}
+
+.erp-icon {
+    font-size: 32px;
+    margin-right: 16px;
+    margin-top: 4px;
+}
+
+.erp-link {
+    text-decoration: none;
+    color: var(--primary-blue);
+    font-size: 16px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.erp-link:hover {
+    color: #1e40af;
+}
+
+.erp-desc {
+    margin: 4px 0 0 0;
+    font-size: 13px;
+    color: var(--text-gray);
+    font-weight: 400;
+}
+
+/* Updated Mega List */
+.mega-list li {
+    margin-bottom: 6px;
+}
+
+/* ========================================
+   ENHANCED MOBILE MENU STYLES
+======================================== */
+
+/* Mobile Submenu Links with Better Spacing */
+.mobile-submenu-link {
+    display: flex;
+    align-items: center;
+    padding: 12px 8px;
+    color: #e5e7eb;
+    text-decoration: none;
+    font-size: 14.5px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    margin-bottom: 4px;
+}
+
+.mobile-submenu-link:hover {
+    background-color: rgba(251, 191, 36, 0.15);
+    color: var(--white);
+    padding-left: 16px;
+    border-left: 3px solid var(--accent-yellow);
+}
+
+.mobile-submenu-link .menu-icon {
+    margin-right: 12px;
+    font-size: 18px;
+    min-width: 28px;
+}
+
+/* Enhanced Mobile Submenu Title */
+.mobile-submenu-title {
+    color: var(--accent-yellow);
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-left: 8px;
+    border-left: 3px solid var(--accent-yellow);
+}
+
+.mobile-submenu-title:first-child {
+    margin-top: 0;
+}
+
+/* Enhanced Nav Link Items */
+.nav-link-item {
+    display: flex;
+    align-items: center;
+    padding: 14px 0;
+    color: var(--white);
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.nav-link-item:hover {
+    padding-left: 8px;
+    color: var(--accent-yellow);
+}
