@@ -356,3 +356,8 @@
     display: inline-block !important;
 }
 
+@media (min-width: 992px) {
+    .btn.btn-warning.rounded-pill {
+        transition: opacity 0.3s ease;
+    }
+}
