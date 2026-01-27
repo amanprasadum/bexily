@@ -332,9 +332,10 @@
 }
 
 .mobile-get-started {
-    font-size: 16px;
-    font-weight: 600;
+   font-size: 16px;
+    font-weight: 400;
     transition: opacity 0.3s ease, transform 0.3s ease;
+    color: #fff !important;
 }
 .mobile-call-btn{
     background-color: #0a257c;
