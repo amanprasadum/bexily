@@ -79,11 +79,11 @@
     width: 620px;
     left: 50%;
     transform: translateX(-50%);
-    border-radius: 12px;
+    border-radius: 32px;
     background: var(--white);
     border: none;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
-    padding: 32px !important;
+    padding: 20px !important;
 }
 
 .mega-menu.erp-menu {
