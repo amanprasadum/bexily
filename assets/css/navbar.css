@@ -115,10 +115,11 @@
 }
 
 .mega-menu h6 {
-    font-size: 17px;
+   font-size: 15px;
     font-weight: 600;
     color: var(--text-dark);
     margin-bottom: 20px;
+    color: #0a257c;
     letter-spacing: -0.3px;
 }
 
