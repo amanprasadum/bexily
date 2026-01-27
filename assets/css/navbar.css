@@ -63,20 +63,27 @@
 /* ===== NAVBAR SMOOTH TOP ENTRY ON SCROLL ===== */
 /* ===== NAVBAR ENTRY ANIMATION ===== */
 .cx-main-header {
-    transform: translateY(-100%);
-    animation: cx-slide-down-entry 0.6s ease forwards;
-    transition: box-shadow 0.3s ease;
     z-index: 999;
     border-bottom: 1px solid #e3e3e3;
+    transition: transform 0.45s ease, box-shadow 0.3s ease;
 }
 
-@keyframes cx-slide-down-entry {
-    to {
+/* Desktop - animate on scroll */
+@media (min-width: 992px) {
+    .cx-main-header {
+        transform: translateY(0);
+    }
+
+    .cx-header-hidden {
+        transform: translateY(-100%);
+    }
+
+    .cx-header-visible {
         transform: translateY(0);
     }
 }
 
-/* Mobile sticky behavior */
+/* Mobile sticky behavior (unchanged) */
 @media (max-width: 991px) {
     .cx-header-sticky {
         animation: cx-slide-from-top 0.45s ease forwards;
