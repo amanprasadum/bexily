@@ -356,3 +356,21 @@
     display: inline-block !important;
 }
 
+@media (max-width: 991px) {
+
+    .navbar-brand {
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* Full (bada) logo default */
+    .full-logo {
+        transition: transform 0.35s ease;
+        transform: translateY(0);
+    }
+
+    /* Jab scroll hua hai (small logo active) */
+    .cx-logo-switched .full-logo {
+        transform: translateY(-10px);
+    }
+}
