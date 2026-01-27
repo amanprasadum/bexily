@@ -1538,7 +1538,7 @@
             }
         });
     </script> -->
-    <script>
+    <!-- <script>
         const header = document.querySelector(".cx-main-header");
         const mobileBtn = document.querySelector(".mobile-get-started");
 
@@ -1555,8 +1555,33 @@
                 mobileBtn.classList.remove("show");
             }
         });
-    </script>
+    </script> -->
 
+<script>
+    const header = document.querySelector(".cx-main-header");
+    const mobileBtn = document.querySelector(".mobile-get-started");
+    const fullLogo = document.querySelector(".full-logo");
+    const mobileLogo = document.querySelector(".mobile-logo");
+
+    window.addEventListener("scroll", () => {
+        const isMobile = window.innerWidth < 992;
+        if (!isMobile) return;
+
+        if (window.scrollY >= 150) {
+            header.classList.add("cx-header-sticky");
+            mobileBtn.classList.add("show");
+
+            fullLogo.style.display = "none";
+            mobileLogo.style.display = "block";
+        } else {
+            header.classList.remove("cx-header-sticky");
+            mobileBtn.classList.remove("show");
+
+            fullLogo.style.display = "block";
+            mobileLogo.style.display = "none";
+        }
+    });
+</script>
 
 
 
