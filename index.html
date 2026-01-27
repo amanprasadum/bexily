@@ -1557,31 +1557,49 @@
         });
     </script> -->
 
-<script>
-    const header = document.querySelector(".cx-main-header");
-    const mobileBtn = document.querySelector(".mobile-get-started");
-    const fullLogo = document.querySelector(".full-logo");
-    const mobileLogo = document.querySelector(".mobile-logo");
+    <!-- <script>
+        const header = document.querySelector(".cx-main-header");
+        const mobileBtn = document.querySelector(".mobile-get-started");
+        const fullLogo = document.querySelector(".full-logo");
+        const mobileLogo = document.querySelector(".mobile-logo");
 
-    window.addEventListener("scroll", () => {
-        const isMobile = window.innerWidth < 992;
-        if (!isMobile) return;
+        window.addEventListener("scroll", () => {
+            const isMobile = window.innerWidth < 992;
+            if (!isMobile) return;
 
-        if (window.scrollY >= 150) {
-            header.classList.add("cx-header-sticky");
-            mobileBtn.classList.add("show");
+            if (window.scrollY >= 150) {
+                header.classList.add("cx-header-sticky");
+                mobileBtn.classList.add("show");
 
-            fullLogo.style.display = "none";
-            mobileLogo.style.display = "block";
-        } else {
-            header.classList.remove("cx-header-sticky");
-            mobileBtn.classList.remove("show");
+                fullLogo.style.display = "none";
+                mobileLogo.style.display = "block";
+            } else {
+                header.classList.remove("cx-header-sticky");
+                mobileBtn.classList.remove("show");
 
-            fullLogo.style.display = "block";
-            mobileLogo.style.display = "none";
-        }
-    });
-</script>
+                fullLogo.style.display = "block";
+                mobileLogo.style.display = "none";
+            }
+        });
+    </script> -->
+
+    <script>
+        const header = document.querySelector(".cx-main-header");
+        const mobileBtn = document.querySelector(".mobile-get-started");
+
+        window.addEventListener("scroll", () => {
+            const isMobile = window.innerWidth < 992;
+            if (!isMobile) return;
+
+            if (window.scrollY >= 150) {
+                header.classList.add("cx-header-sticky", "cx-logo-switched");
+                mobileBtn.classList.add("show");
+            } else {
+                header.classList.remove("cx-header-sticky", "cx-logo-switched");
+                mobileBtn.classList.remove("show");
+            }
+        });
+    </script>
 
 
 
