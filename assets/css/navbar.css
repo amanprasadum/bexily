@@ -146,8 +146,8 @@
 }
 
 .mega-list a:hover {
-    color: var(--primary-blue);
-    background-color: var(--light-bg);
+   color: var(--primary-blue);
+    background-color: #e8f0f9;
     padding-left: 12px;
 }
 
