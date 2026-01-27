@@ -1459,18 +1459,17 @@
                 header.classList.add("cx-header-sticky");
                 mobileBtn.classList.add("show");
 
-                fullLogo.classList.add("logo-hide");
-                mobileLogo.classList.add("logo-show");
+                fullLogo.style.display = "none";
+                mobileLogo.style.display = "block";
             } else {
                 header.classList.remove("cx-header-sticky");
                 mobileBtn.classList.remove("show");
 
-                fullLogo.classList.remove("logo-hide");
-                mobileLogo.classList.remove("logo-show");
+                fullLogo.style.display = "block";
+                mobileLogo.style.display = "none";
             }
         });
     </script>
-
     <script>
         // FAQ Hover Open Feature with Smooth Transition
         document.addEventListener('DOMContentLoaded', function () {
