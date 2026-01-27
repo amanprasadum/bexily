@@ -356,16 +356,3 @@
     display: inline-block !important;
 }
 
-
-/* @media (max-width: 991px) {
-
-    .navbar-brand {
-        transition: transform 0.35s ease;
-    }
-
-    .cx-header-sticky .navbar-brand {
-        transform: translateY(-6px);
-    }
-
-   
-} */
