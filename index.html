@@ -1445,93 +1445,29 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- <script>
-        const header = document.querySelector(".cx-main-header");
-        const mobileBtn = document.querySelector(".mobile-get-started");
-        const desktopBtn = document.querySelector(".btn.btn-warning.rounded-pill"); // Desktop schedule button
-        const fullLogo = document.querySelector(".full-logo");
-        const mobileLogo = document.querySelector(".mobile-logo");
-
-        let lastScroll = 0;
-
-        window.addEventListener("scroll", () => {
-            const currentScroll = window.scrollY;
-            const isMobile = window.innerWidth < 992;
-
-            if (isMobile) {
-                // Mobile behavior (existing)
-                if (currentScroll >= 150) {
-                    header.classList.add("cx-header-sticky");
-                    mobileBtn.classList.add("show");
-                    fullLogo.style.display = "none";
-                    mobileLogo.style.display = "block";
-                } else {
-                    header.classList.remove("cx-header-sticky");
-                    mobileBtn.classList.remove("show");
-                    fullLogo.style.display = "block";
-                    mobileLogo.style.display = "none";
-                }
-            } else {
-                // Desktop behavior
-                if (currentScroll > lastScroll && currentScroll > 150) {
-                    // Scrolling down
-                    header.classList.add("cx-header-sticky");
-                    if (desktopBtn) desktopBtn.style.display = "inline-block";
-                } else if (currentScroll < lastScroll) {
-                    // Scrolling up
-                    if (desktopBtn) desktopBtn.style.display = "none";
-                }
-
-                if (currentScroll <= 150) {
-                    header.classList.remove("cx-header-sticky");
-                    if (desktopBtn) desktopBtn.style.display = "inline-block";
-                }
-            }
-
-            lastScroll = currentScroll;
-        });
-    </script> -->
-
     <script>
         const header = document.querySelector(".cx-main-header");
         const mobileBtn = document.querySelector(".mobile-get-started");
-        const desktopBtn = document.querySelector(".btn.btn-warning.rounded-pill");
         const fullLogo = document.querySelector(".full-logo");
         const mobileLogo = document.querySelector(".mobile-logo");
 
-        let lastScroll = 0;
-
         window.addEventListener("scroll", () => {
-            const currentScroll = window.scrollY;
             const isMobile = window.innerWidth < 992;
+            if (!isMobile) return;
 
-            if (isMobile) {
-                // Mobile behavior (existing)
-                if (currentScroll >= 150) {
-                    header.classList.add("cx-header-sticky");
-                    mobileBtn.classList.add("show");
-                    fullLogo.style.display = "none";
-                    mobileLogo.style.display = "block";
-                } else {
-                    header.classList.remove("cx-header-sticky");
-                    mobileBtn.classList.remove("show");
-                    fullLogo.style.display = "block";
-                    mobileLogo.style.display = "none";
-                }
+            if (window.scrollY >= 150) {
+                header.classList.add("cx-header-sticky");
+                mobileBtn.classList.add("show");
+
+                fullLogo.style.display = "none";
+                mobileLogo.style.display = "block";
             } else {
-                // Desktop behavior
-                if (currentScroll > lastScroll && currentScroll > 150) {
-                    // Scrolling down
-                    header.classList.add("cx-header-sticky");
-                    if (desktopBtn) desktopBtn.style.display = "inline-block";
-                } else if (currentScroll <= 50) {
-                    // Completely at top - hide button
-                    if (desktopBtn) desktopBtn.style.display = "none";
-                    header.classList.remove("cx-header-sticky");
-                }
-            }
+                header.classList.remove("cx-header-sticky");
+                mobileBtn.classList.remove("show");
 
-            lastScroll = currentScroll;
+                fullLogo.style.display = "block";
+                mobileLogo.style.display = "none";
+            }
         });
     </script>
     <script>
