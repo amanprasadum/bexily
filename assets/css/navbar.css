@@ -357,4 +357,40 @@
 }
 
 
+/* ===== MOBILE LOGO SMOOTH ENTRY (SAFE) ===== */
+@media (max-width: 991px) {
+
+    .navbar-brand {
+        position: relative;
+        min-height: 60px;
+    }
+
+    .full-logo,
+    .mobile-logo {
+        transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+        will-change: transform;
+    }
+
+    /* default state */
+    .full-logo {
+        transform: translateY(0);
+    }
+
+    .mobile-logo {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 60px;
+        transform: translateY(-50%) translateY(8px);
+    }
+
+    /* when scrolled */
+    .logo-hide {
+        transform: translateY(-8px);
+    }
+
+    .logo-show {
+        transform: translateY(-50%) translateY(0);
+    }
+}
 
