@@ -336,7 +336,9 @@
     font-weight: 600;
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
-
+.mobile-call-btn{
+    background-color: #0a257c;
+}
 .mobile-get-started.show {
     display: inline-block !important;
 }
