@@ -378,3 +378,15 @@
         transition: opacity 0.3s ease;
     }
 }
+/*mega menu hover indicator*/
+/*.navbar .dropdown:hover > .nav-link {*/
+/*    color: #fbbf24 !important;*/
+/*    background-color: rgba(251, 191, 36, 0.15);*/
+/*    border-radius: 8px;*/
+/*}*/
+
+.navbar .dropdown:hover > .nav-link {
+    color: #fbbf24 !important;
+    font-weight: 600;
+    transform: scale(1.05);
+}
