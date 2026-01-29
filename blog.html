@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bexily - Custom ERP Software Development Company in Kolkata</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/ui-component/blog.css">
+</head>
+
+<body>
+
+    <!-- ========================================
+     NAVIGATION 
+======================================== -->
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark py-2 fixed-top cx-main-header">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="javascript:void(0)">
+                <!-- Full Logo -->
+                <img src="assets/images/bexily-new-logo.png" class="navbar-logo full-logo d-lg-none" />
+
+                <!-- Branding Logo -->
+                <img src="assets/images/mobile-logo.png" class="navbar-logo mobile-logo d-lg-none"
+                    style="width:60px; display:none;" />
+
+                <!-- Desktop logo (as it is) -->
+                <img src="assets/images/bexily-new-logo.png" class="navbar-logo d-none d-lg-block" />
+            </a>
+
+
+            <!-- Schedule A Call (MOBILE/TABLET ONLY) -->
+            <a href="#quote" class="btn mobile-call-btn px-5 py-2 d-lg-none mobile-get-started" style="display: none;">
+                Schedule A Call
+            </a>
+
+            <!-- MOBILE TOGGLER -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mobileCanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- DESKTOP NAV -->
+            <div class="collapse navbar-collapse d-none d-lg-flex">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+
+
+
+                    <!-- Our Service Dropdown -->
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="#">
+                            Our Service
+                        </a>
+
+                        <div class="dropdown-menu mega-menu shadow border-0 p-4">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <!-- <h6>Software Solutions</h6> -->
+                                    <ul class="mega-list">
+                                        <li><a href="#"><i class="fas fa-angle-right"></i> Web Development</a></li>
+                                        <li><a href="#"><i class="fas fa-angle-right"></i> App Development</a></li>
+                                        <li><a href="#"><i class="fas fa-angle-right"></i> Custom Software
+                                                Development</a></li>
+                                        <li><a href="#"><i class="fas fa-angle-right"></i> Cloud Solution</a></li>
+                                        <li><a href="#"><i class="fas fa-angle-right"></i> DevOps Solution</a></li>
+                                        <li><a href="#"><i class="fas fa-angle-right"></i> UI/UX Design Service</a></li>
+                                        <li><a href="#"><i class="fas fa-angle-right"></i> Digital Marketing Service</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <!-- <h6>Advance Technology</h6> -->
+                                    <ul class="mega-list">
+                                        <li><a href="#"><i class="fas fa-angle-right"></i> Blockchain and
+                                                Cryptocurrency</a></li>
+                                        <li><a href="#"><i class="fas fa-angle-right"></i> Artificial Intelligence</a>
+                                        </li>
+                                        <li><a href="#"><i class="fas fa-angle-right"></i> Machine learning</a></li>
+                                        <li><a href="#"><i class="fas fa-angle-right"></i> Data Science</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Industry Dropdown -->
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="#">
+                            Industry
+                        </a>
+
+                        <div class="dropdown-menu mega-menu shadow border-0 p-4">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <ul class="mega-list">
+                                        <li><a href="#"><i class="fas fa-angle-right"></i> Ecommerce and Retail</a></li>
+                                        <li><a href="#"><i class="fas fa-angle-right"></i> Logistics &
+                                                Transportation</a></li>
+                                        <li><a href="#"><i class="fas fa-angle-right"></i> Real Estate</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="mega-list">
+                                        <li><a href="#"><i class="fas fa-angle-right"></i> Manufacturing</a></li>
+                                        <li><a href="#"><i class="fas fa-angle-right"></i> Education</a></li>
+                                        <li><a href="#"><i class="fas fa-angle-right"></i> Healthcare</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- ERP Services Dropdown -->
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="#">
+                            ERP Services
+                        </a>
+
+                        <!-- <div class="dropdown-menu mega-menu erp-menu shadow border-0 p-4">
+                            <a href="service.php" class="erp-menu-item">
+                                <strong><i class="fas fa-chart-line"></i> Complete ERP Solutions</strong>
+                                <small>Comprehensive enterprise resource planning</small>
+                            </a>
+                            
+                        </div> -->
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li> -->
+                    <!-- <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li> -->
+
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-warning rounded-pill px-4" href="#quote">Schedule A Call</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== OFFCANVAS (MOBILE ONLY) ===== -->
+    <div class="offcanvas offcanvas-start bg-dark text-white w-100" tabindex="-1" id="mobileCanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <div class="offcanvas-body mobile-menu">
+
+            <!-- Mobile Accordion -->
+            <div class="accordion mobile-accordion accordion-flush" id="mobileAccordion">
+
+                <!-- ERP Services Accordion -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#erpCollapse">
+                            ERP Services
+                        </button>
+                    </h2>
+                    <div id="erpCollapse" class="accordion-collapse collapse" data-bs-parent="#mobileAccordion">
+                        <div class="accordion-body">
+                            <a href="service.php" class="mobile-submenu-link">
+                                <i class="fas fa-chart-line"></i> Complete ERP Solutions
+                            </a>
+                            <!-- Add more ERP submenu items here in future -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Our Service Accordion -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#serviceCollapse">
+                            Our Service
+                        </button>
+                    </h2>
+                    <div id="serviceCollapse" class="accordion-collapse collapse" data-bs-parent="#mobileAccordion">
+                        <div class="accordion-body">
+
+                            <div class="mobile-submenu-title">Software Solutions</div>
+                            <a href="#" class="mobile-submenu-link">
+                                <i class="fas fa-angle-right"></i> Web Development
+                            </a>
+                            <a href="#" class="mobile-submenu-link">
+                                <i class="fas fa-angle-right"></i> App Development
+                            </a>
+                            <a href="#" class="mobile-submenu-link">
+                                <i class="fas fa-angle-right"></i> Custom Software Development
+                            </a>
+                            <a href="#" class="mobile-submenu-link">
+                                <i class="fas fa-angle-right"></i> Cloud Solution
+                            </a>
+                            <a href="#" class="mobile-submenu-link">
+                                <i class="fas fa-angle-right"></i> DevOps Solution
+                            </a>
+                            <a href="#" class="mobile-submenu-link">
+                                <i class="fas fa-angle-right"></i> UI/UX Design Service
+                            </a>
+                            <a href="#" class="mobile-submenu-link">
+                                <i class="fas fa-angle-right"></i> Digital Marketing Service
+                            </a>
+
+                            <div class="mobile-submenu-title">Advance Technology</div>
+                            <a href="#" class="mobile-submenu-link">
+                                <i class="fas fa-angle-right"></i> Blockchain and Cryptocurrency
+                            </a>
+                            <a href="#" class="mobile-submenu-link">
+                                <i class="fas fa-angle-right"></i> Artificial Intelligence
+                            </a>
+                            <a href="#" class="mobile-submenu-link">
+                                <i class="fas fa-angle-right"></i> Machine Learning
+                            </a>
+                            <a href="#" class="mobile-submenu-link">
+                                <i class="fas fa-angle-right"></i> Data Science
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Industry Accordion -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#industryCollapse">
+                            Industry
+                        </button>
+                    </h2>
+                    <div id="industryCollapse" class="accordion-collapse collapse" data-bs-parent="#mobileAccordion">
+                        <div class="accordion-body">
+                            <a href="#" class="mobile-submenu-link">
+                                <i class="fas fa-angle-right"></i> Ecommerce and Retail
+                            </a>
+                            <a href="#" class="mobile-submenu-link">
+                                <i class="fas fa-angle-right"></i> Logistics & Transportation
+                            </a>
+                            <a href="#" class="mobile-submenu-link">
+                                <i class="fas fa-angle-right"></i> Real Estate
+                            </a>
+                            <a href="#" class="mobile-submenu-link">
+                                <i class="fas fa-angle-right"></i> Manufacturing
+                            </a>
+                            <a href="#" class="mobile-submenu-link">
+                                <i class="fas fa-angle-right"></i> Education
+                            </a>
+                            <a href="#" class="mobile-submenu-link">
+                                <i class="fas fa-angle-right"></i> Healthcare
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Navigation Links -->
+            <div class="px-3">
+                <a href="#home" class="nav-link-item">
+                    <i class="fas fa-home"></i> Home
+                </a>
+                <a href="#about" class="nav-link-item">
+                    <i class="fas fa-info-circle"></i> About
+                </a>
+                <a href="#contact" class="nav-link-item">
+                    <i class="fas fa-envelope"></i> Contact
+                </a>
+                <a href="#blog" class="nav-link-item">
+                    <i class="fas fa-blog"></i> Blog
+                </a>
+                <a href="#faq" class="nav-link-item">
+                    <i class="fas fa-question-circle"></i> FAQ
+                </a>
+
+                <a class="btn btn-warning rounded-pill px-4 btn-mobile" href="#quote">Schedule A Call</a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ========================================
+     BLOG PAGE - PAGE HEADER
+======================================== -->
+<section class="blg-page-header">
+    <div class="container">
+        <div class="blg-header-content">
+            <h1 class="blg-page-title">Our Blog</h1>
+            <p class="blg-page-subtitle">Insights, news, and expert perspectives on ERP, technology, and business transformation.</p>
+            <nav class="blg-breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="blg-separator">/</span>
+                <span class="blg-current">Blog</span>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================
+     BLOG FILTER & SEARCH SECTION
+======================================== -->
+<section class="blg-filter-section">
+    <div class="container">
+        <div class="row align-items-center g-3">
+            <div class="col-lg-6">
+                <div class="blg-search-box">
+                    <input type="text" class="blg-search-input" placeholder="Search articles...">
+                    <button class="blg-search-btn">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="blg-filter-tabs">
+                    <button class="blg-filter-btn active" data-filter="all">All Posts</button>
+                    <button class="blg-filter-btn" data-filter="erp">ERP Solutions</button>
+                    <button class="blg-filter-btn" data-filter="tech">Technology</button>
+                    <button class="blg-filter-btn" data-filter="business">Business</button>
+                    <button class="blg-filter-btn" data-filter="tips">Tips & Tricks</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================
+     FEATURED BLOG POST
+======================================== -->
+<section class="blg-featured-section">
+    <div class="container">
+        <div class="blg-featured-card">
+            <div class="row g-0 align-items-center">
+                <div class="col-lg-6">
+                    <div class="blg-featured-image">
+                        <img src="assets/images/blog-featured.jpg" alt="Featured Blog" class="img-fluid">
+                        <span class="blg-featured-badge">Featured</span>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="blg-featured-content">
+                        <div class="blg-meta">
+                            <span class="blg-category">ERP Solutions</span>
+                            <span class="blg-date"><i class="bi bi-calendar3"></i> Jan 28, 2026</span>
+                        </div>
+                        <h2 class="blg-featured-title">The Future of ERP: AI-Powered Business Intelligence in 2026</h2>
+                        <p class="blg-featured-excerpt">Discover how artificial intelligence is revolutionizing enterprise resource planning systems and what it means for your business growth.</p>
+                        <div class="blg-author-info">
+                            <img src="assets/images/author-1.jpg" alt="Author" class="blg-author-img">
+                            <div class="blg-author-details">
+                                <h6 class="blg-author-name">Rajesh Kumar</h6>
+                                <span class="blg-read-time">8 min read</span>
+                            </div>
+                        </div>
+                        <a href="single-blog.html" class="btn blg-read-btn">Read Article <i class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================
+     BLOG POSTS GRID
+======================================== -->
+<section class="blg-posts-section">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Blog Card 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="blg-card">
+                    <div class="blg-card-image">
+                        <img src="assets/images/blog-1.jpg" alt="Blog Post" class="img-fluid">
+                        <span class="blg-card-category">Technology</span>
+                    </div>
+                    <div class="blg-card-content">
+                        <div class="blg-card-meta">
+                            <span class="blg-card-date"><i class="bi bi-calendar3"></i> Jan 25, 2026</span>
+                            <span class="blg-card-read"><i class="bi bi-clock"></i> 5 min read</span>
+                        </div>
+                        <h3 class="blg-card-title">
+                            <a href="single-blog.html">Cloud ERP vs On-Premise: Which is Right for Your Business?</a>
+                        </h3>
+                        <p class="blg-card-excerpt">A comprehensive comparison of cloud-based and on-premise ERP solutions to help you make the right choice.</p>
+                        <div class="blg-card-footer">
+                            <div class="blg-card-author">
+                                <img src="assets/images/author-2.jpg" alt="Author">
+                                <span>Priya Sharma</span>
+                            </div>
+                            <a href="single-blog.html" class="blg-card-link">
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Card 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="blg-card">
+                    <div class="blg-card-image">
+                        <img src="assets/images/blog-2.jpg" alt="Blog Post" class="img-fluid">
+                        <span class="blg-card-category">Business</span>
+                    </div>
+                    <div class="blg-card-content">
+                        <div class="blg-card-meta">
+                            <span class="blg-card-date"><i class="bi bi-calendar3"></i> Jan 22, 2026</span>
+                            <span class="blg-card-read"><i class="bi bi-clock"></i> 6 min read</span>
+                        </div>
+                        <h3 class="blg-card-title">
+                            <a href="single-blog.html">5 Signs Your Business Needs Custom ERP Software</a>
+                        </h3>
+                        <p class="blg-card-excerpt">Learn the key indicators that suggest it's time to invest in a custom ERP solution for your growing business.</p>
+                        <div class="blg-card-footer">
+                            <div class="blg-card-author">
+                                <img src="assets/images/author-3.jpg" alt="Author">
+                                <span>Amit Patel</span>
+                            </div>
+                            <a href="single-blog.html" class="blg-card-link">
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Card 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="blg-card">
+                    <div class="blg-card-image">
+                        <img src="assets/images/blog-3.jpg" alt="Blog Post" class="img-fluid">
+                        <span class="blg-card-category">Tips & Tricks</span>
+                    </div>
+                    <div class="blg-card-content">
+                        <div class="blg-card-meta">
+                            <span class="blg-card-date"><i class="bi bi-calendar3"></i> Jan 20, 2026</span>
+                            <span class="blg-card-read"><i class="bi bi-clock"></i> 4 min read</span>
+                        </div>
+                        <h3 class="blg-card-title">
+                            <a href="single-blog.html">How to Successfully Implement ERP in Manufacturing</a>
+                        </h3>
+                        <p class="blg-card-excerpt">Step-by-step guide to implementing ERP systems in manufacturing businesses for maximum efficiency.</p>
+                        <div class="blg-card-footer">
+                            <div class="blg-card-author">
+                                <img src="assets/images/author-4.jpg" alt="Author">
+                                <span>Sneha Desai</span>
+                            </div>
+                            <a href="single-blog.html" class="blg-card-link">
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Card 4 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="blg-card">
+                    <div class="blg-card-image">
+                        <img src="assets/images/blog-4.jpg" alt="Blog Post" class="img-fluid">
+                        <span class="blg-card-category">ERP Solutions</span>
+                    </div>
+                    <div class="blg-card-content">
+                        <div class="blg-card-meta">
+                            <span class="blg-card-date"><i class="bi bi-calendar3"></i> Jan 18, 2026</span>
+                            <span class="blg-card-read"><i class="bi bi-clock"></i> 7 min read</span>
+                        </div>
+                        <h3 class="blg-card-title">
+                            <a href="single-blog.html">Top 10 ERP Trends to Watch in 2026</a>
+                        </h3>
+                        <p class="blg-card-excerpt">Stay ahead of the curve with these emerging trends shaping the future of enterprise resource planning.</p>
+                        <div class="blg-card-footer">
+                            <div class="blg-card-author">
+                                <img src="assets/images/author-1.jpg" alt="Author">
+                                <span>Rajesh Kumar</span>
+                            </div>
+                            <a href="single-blog.html" class="blg-card-link">
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Card 5 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="blg-card">
+                    <div class="blg-card-image">
+                        <img src="assets/images/blog-5.jpg" alt="Blog Post" class="img-fluid">
+                        <span class="blg-card-category">Technology</span>
+                    </div>
+                    <div class="blg-card-content">
+                        <div class="blg-card-meta">
+                            <span class="blg-card-date"><i class="bi bi-calendar3"></i> Jan 15, 2026</span>
+                            <span class="blg-card-read"><i class="bi bi-clock"></i> 5 min read</span>
+                        </div>
+                        <h3 class="blg-card-title">
+                            <a href="single-blog.html">Machine Learning in ERP: Practical Applications</a>
+                        </h3>
+                        <p class="blg-card-excerpt">Explore how machine learning is transforming ERP systems with real-world use cases and examples.</p>
+                        <div class="blg-card-footer">
+                            <div class="blg-card-author">
+                                <img src="assets/images/author-2.jpg" alt="Author">
+                                <span>Priya Sharma</span>
+                            </div>
+                            <a href="single-blog.html" class="blg-card-link">
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Card 6 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="blg-card">
+                    <div class="blg-card-image">
+                        <img src="assets/images/blog-6.jpg" alt="Blog Post" class="img-fluid">
+                        <span class="blg-card-category">Business</span>
+                    </div>
+                    <div class="blg-card-content">
+                        <div class="blg-card-meta">
+                            <span class="blg-card-date"><i class="bi bi-calendar3"></i> Jan 12, 2026</span>
+                            <span class="blg-card-read"><i class="bi bi-clock"></i> 6 min read</span>
+                        </div>
+                        <h3 class="blg-card-title">
+                            <a href="single-blog.html">ROI of ERP: Calculate Your Business Returns</a>
+                        </h3>
+                        <p class="blg-card-excerpt">Learn how to measure and maximize the return on investment from your ERP implementation.</p>
+                        <div class="blg-card-footer">
+                            <div class="blg-card-author">
+                                <img src="assets/images/author-3.jpg" alt="Author">
+                                <span>Amit Patel</span>
+                            </div>
+                            <a href="single-blog.html" class="blg-card-link">
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Card 7 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="blg-card">
+                    <div class="blg-card-image">
+                        <img src="assets/images/blog-7.jpg" alt="Blog Post" class="img-fluid">
+                        <span class="blg-card-category">Tips & Tricks</span>
+                    </div>
+                    <div class="blg-card-content">
+                        <div class="blg-card-meta">
+                            <span class="blg-card-date"><i class="bi bi-calendar3"></i> Jan 10, 2026</span>
+                            <span class="blg-card-read"><i class="bi bi-clock"></i> 4 min read</span>
+                        </div>
+                        <h3 class="blg-card-title">
+                            <a href="single-blog.html">Common ERP Implementation Mistakes to Avoid</a>
+                        </h3>
+                        <p class="blg-card-excerpt">Discover the most common pitfalls in ERP implementation and how to avoid them for a smooth rollout.</p>
+                        <div class="blg-card-footer">
+                            <div class="blg-card-author">
+                                <img src="assets/images/author-4.jpg" alt="Author">
+                                <span>Sneha Desai</span>
+                            </div>
+                            <a href="single-blog.html" class="blg-card-link">
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Card 8 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="blg-card">
+                    <div class="blg-card-image">
+                        <img src="assets/images/blog-8.jpg" alt="Blog Post" class="img-fluid">
+                        <span class="blg-card-category">ERP Solutions</span>
+                    </div>
+                    <div class="blg-card-content">
+                        <div class="blg-card-meta">
+                            <span class="blg-card-date"><i class="bi bi-calendar3"></i> Jan 08, 2026</span>
+                            <span class="blg-card-read"><i class="bi bi-clock"></i> 7 min read</span>
+                        </div>
+                        <h3 class="blg-card-title">
+                            <a href="single-blog.html">ERP Integration: Connecting Your Business Systems</a>
+                        </h3>
+                        <p class="blg-card-excerpt">A complete guide to integrating ERP with other business systems for seamless data flow and operations.</p>
+                        <div class="blg-card-footer">
+                            <div class="blg-card-author">
+                                <img src="assets/images/author-1.jpg" alt="Author">
+                                <span>Rajesh Kumar</span>
+                            </div>
+                            <a href="single-blog.html" class="blg-card-link">
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Card 9 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="blg-card">
+                    <div class="blg-card-image">
+                        <img src="assets/images/blog-9.jpg" alt="Blog Post" class="img-fluid">
+                        <span class="blg-card-category">Technology</span>
+                    </div>
+                    <div class="blg-card-content">
+                        <div class="blg-card-meta">
+                            <span class="blg-card-date"><i class="bi bi-calendar3"></i> Jan 05, 2026</span>
+                            <span class="blg-card-read"><i class="bi bi-clock"></i> 5 min read</span>
+                        </div>
+                        <h3 class="blg-card-title">
+                            <a href="single-blog.html">Mobile ERP: Managing Business on the Go</a>
+                        </h3>
+                        <p class="blg-card-excerpt">How mobile ERP solutions are empowering businesses with real-time access and decision-making capabilities.</p>
+                        <div class="blg-card-footer">
+                            <div class="blg-card-author">
+                                <img src="assets/images/author-2.jpg" alt="Author">
+                                <span>Priya Sharma</span>
+                            </div>
+                            <a href="single-blog.html" class="blg-card-link">
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================
+     PAGINATION
+======================================== -->
+<section class="blg-pagination-section">
+    <div class="container">
+        <nav class="blg-pagination">
+            <ul class="blg-pagination-list">
+                <li class="blg-page-item disabled">
+                    <a class="blg-page-link" href="#"><i class="bi bi-chevron-left"></i></a>
+                </li>
+                <li class="blg-page-item active">
+                    <a class="blg-page-link" href="#">1</a>
+                </li>
+                <li class="blg-page-item">
+                    <a class="blg-page-link" href="#">2</a>
+                </li>
+                <li class="blg-page-item">
+                    <a class="blg-page-link" href="#">3</a>
+                </li>
+                <li class="blg-page-item">
+                    <a class="blg-page-link" href="#">4</a>
+                </li>
+                <li class="blg-page-item">
+                    <a class="blg-page-link" href="#"><i class="bi bi-chevron-right"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</section>
+
+<!-- ========================================
+     NEWSLETTER SECTION
+======================================== -->
+<section class="blg-newsletter-section">
+    <div class="container">
+        <div class="blg-newsletter-wrapper">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="blg-newsletter-icon">
+                        <i class="bi bi-envelope-heart"></i>
+                    </div>
+                    <h3 class="blg-newsletter-title">Subscribe to Our Newsletter</h3>
+                    <p class="blg-newsletter-desc">Get the latest insights, tips, and updates delivered straight to your inbox.</p>
+                </div>
+                <div class="col-lg-6">
+                    <form class="blg-newsletter-form">
+                        <div class="blg-newsletter-input-group">
+                            <input type="email" class="blg-newsletter-input" placeholder="Enter your email address" required>
+                            <button type="submit" class="btn blg-newsletter-btn">
+                                Subscribe <i class="bi bi-arrow-right ms-2"></i>
+                            </button>
+                        </div>
+                        <p class="blg-newsletter-note">No spam. Unsubscribe anytime.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    
+    <!-- ========================================
+     FOOTER
+======================================== -->
+    <footer class="footer footer-bg" id="contact">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Company Info -->
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <img src="assets/images/bexily-new-logo.png" alt="" srcset="" class="navbar-logo" />
+                    </div>
+                    <p class="footer-desc text-white">Kolkata's leading ERP software development company delivering
+                        intelligent,
+                        scalable solutions tailored to your business needs. Over 10 years of excellence.</p>
+                    <div class="mt-4">
+                        <p class="mb-2 text-white"><i class="bi bi-geo-alt me-2"></i>123 Street, New York, USA</p>
+                        <p class="mb-2 text-white"><i class="bi bi-telephone me-2"></i>+012 345 6789</p>
+                        <p class="mb-0 text-white"><i class="bi bi-envelope me-2"></i>info@example.com</p>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="footer-title">Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#industry">Industries</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="footer-title">Our Services</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Custom ERP Development</a></li>
+                        <li><a href="#">ERP Integration</a></li>
+                        <li><a href="#">ERP Migration</a></li>
+                        <li><a href="#">Maintenance & Support</a></li>
+                        <li><a href="#">Cloud ERP Solutions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Industries -->
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="footer-title">Industries</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Textile Industry</a></li>
+                        <li><a href="#">Garment Manufacturing</a></li>
+                        <li><a href="#">Finance & Accounting</a></li>
+                        <li><a href="#">Healthcare</a></li>
+                        <li><a href="#">Manufacturing</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom text-white">
+                <p>&copy; 2026 Bexily. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script>
+        const header = document.querySelector(".cx-main-header");
+        const mobileBtn = document.querySelector(".mobile-get-started");
+        const fullLogo = document.querySelector(".full-logo");
+        const mobileLogo = document.querySelector(".mobile-logo");
+
+        window.addEventListener("scroll", () => {
+            const isMobile = window.innerWidth < 992;
+            if (!isMobile) return;
+
+            if (window.scrollY >= 150) {
+                header.classList.add("cx-header-sticky");
+                mobileBtn.classList.add("show");
+
+                fullLogo.style.display = "none";
+                mobileLogo.style.display = "block";
+            } else {
+                header.classList.remove("cx-header-sticky");
+                mobileBtn.classList.remove("show");
+
+                fullLogo.style.display = "block";
+                mobileLogo.style.display = "none";
+            }
+        });
+    </script> -->
+    <script>
+        const header = document.querySelector(".cx-main-header");
+        const mobileBtn = document.querySelector(".mobile-get-started");
+        const fullLogo = document.querySelector(".full-logo");
+        const mobileLogo = document.querySelector(".mobile-logo");
+
+        let lastScrollTop = 0;
+
+        window.addEventListener("scroll", () => {
+            const isMobile = window.innerWidth < 992;
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (isMobile) {
+                // Mobile behavior (existing code)
+                if (scrollTop >= 150) {
+                    header.classList.add("cx-header-sticky");
+                    mobileBtn.classList.add("show");
+                    fullLogo.style.display = "none";
+                    mobileLogo.style.display = "block";
+                } else {
+                    header.classList.remove("cx-header-sticky");
+                    mobileBtn.classList.remove("show");
+                    fullLogo.style.display = "block";
+                    mobileLogo.style.display = "none";
+                }
+            } else {
+                // Desktop behavior - hide on scroll down, show on scroll up
+                if (scrollTop > lastScrollTop && scrollTop > 100) {
+                    // Scrolling down
+                    header.classList.add("cx-header-hidden");
+                    header.classList.remove("cx-header-visible");
+                } else {
+                    // Scrolling up
+                    header.classList.remove("cx-header-hidden");
+                    header.classList.add("cx-header-visible");
+                }
+            }
+
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+    </script>
+    <script>
+        // FAQ Hover Open Feature with Smooth Transition
+        document.addEventListener('DOMContentLoaded', function () {
+            const faqItems = document.querySelectorAll('.faq-item-pro');
+            let hoverTimeout;
+
+            faqItems.forEach(item => {
+                item.addEventListener('mouseenter', function () {
+                    clearTimeout(hoverTimeout);
+
+                    hoverTimeout = setTimeout(() => {
+                        const button = this.querySelector('.accordion-button');
+                        const target = button.getAttribute('data-bs-target');
+                        const collapse = document.querySelector(target);
+
+                        if (button.classList.contains('collapsed')) {
+                            // Smooth open with Bootstrap's built-in animation
+                            const bsCollapse = new bootstrap.Collapse(collapse, {
+                                toggle: true
+                            });
+                        }
+                    }, 200);
+                });
+
+                item.addEventListener('mouseleave', function () {
+                    clearTimeout(hoverTimeout);
+                });
+            });
+        });
+    </script>
+</body>
+
+
+</html>
