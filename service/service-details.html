@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bexily - Custom ERP Software Development Company in Kolkata</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/ui-component/service-details.css">
+    
+</head>
+
+<body>
+
+    <!-- ========================================
+     NAVIGATION 
+======================================== -->
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark py-2 fixed-top cx-main-header">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="javascript:void(0)">
+                <!-- Full Logo -->
+                <img src="assets/images/bexily-new-logo.png" class="navbar-logo full-logo d-lg-none" />
+
+                <!-- Branding Logo -->
+                <img src="assets/images/mobile-logo.png" class="navbar-logo mobile-logo d-lg-none"
+                    style="width:60px; display:none;" />
+
+                <!-- Desktop logo (as it is) -->
+                <img src="assets/images/bexily-new-logo.png" class="navbar-logo d-none d-lg-block" />
+            </a>
+
+
+            <!-- Schedule A Call (MOBILE/TABLET ONLY) -->
+            <a href="#quote" class="btn mobile-call-btn px-5 py-2 d-lg-none mobile-get-started" style="display: none;">
+                Schedule A Call
+            </a>
+
+            <!-- MOBILE TOGGLER -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mobileCanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- DESKTOP NAV -->
+            <div class="collapse navbar-collapse d-none d-lg-flex">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+
+
+
+                    <!-- Our Service Dropdown -->
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="#">
+                            Our Service
+                        </a>
+
+                        <div class="dropdown-menu mega-menu shadow border-0 p-4">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <!-- <h6>Software Solutions</h6> -->
+                                    <ul class="mega-list">
+                                        <li><a href="#"><i class="fas fa-angle-right"></i> Web Development</a></li>
+                                        <li><a href="#"><i class="fas fa-angle-right"></i> App Development</a></li>
+                                        <li><a href="#"><i class="fas fa-angle-right"></i> Custom Software
+                                                Development</a></li>
+                                        <li><a href="#"><i class="fas fa-angle-right"></i> Cloud Solution</a></li>
+                                        <li><a href="#"><i class="fas fa-angle-right"></i> DevOps Solution</a></li>
+                                        <li><a href="#"><i class="fas fa-angle-right"></i> UI/UX Design Service</a></li>
+                                        <li><a href="#"><i class="fas fa-angle-right"></i> Digital Marketing Service</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <!-- <h6>Advance Technology</h6> -->
+                                    <ul class="mega-list">
+                                        <li><a href="#"><i class="fas fa-angle-right"></i> Blockchain and
+                                                Cryptocurrency</a></li>
+                                        <li><a href="#"><i class="fas fa-angle-right"></i> Artificial Intelligence</a>
+                                        </li>
+                                        <li><a href="#"><i class="fas fa-angle-right"></i> Machine learning</a></li>
+                                        <li><a href="#"><i class="fas fa-angle-right"></i> Data Science</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Industry Dropdown -->
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="#">
+                            Industry
+                        </a>
+
+                        <div class="dropdown-menu mega-menu shadow border-0 p-4">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <ul class="mega-list">
+                                        <li><a href="#"><i class="fas fa-angle-right"></i> Ecommerce and Retail</a></li>
+                                        <li><a href="#"><i class="fas fa-angle-right"></i> Logistics &
+                                                Transportation</a></li>
+                                        <li><a href="#"><i class="fas fa-angle-right"></i> Real Estate</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="mega-list">
+                                        <li><a href="#"><i class="fas fa-angle-right"></i> Manufacturing</a></li>
+                                        <li><a href="#"><i class="fas fa-angle-right"></i> Education</a></li>
+                                        <li><a href="#"><i class="fas fa-angle-right"></i> Healthcare</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- ERP Services Dropdown -->
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="#">
+                            ERP Services
+                        </a>
+
+                        <!-- <div class="dropdown-menu mega-menu erp-menu shadow border-0 p-4">
+                            <a href="service.php" class="erp-menu-item">
+                                <strong><i class="fas fa-chart-line"></i> Complete ERP Solutions</strong>
+                                <small>Comprehensive enterprise resource planning</small>
+                            </a>
+                            
+                        </div> -->
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li> -->
+                    <!-- <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li> -->
+
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-warning rounded-pill px-4" href="#quote">Schedule A Call</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== OFFCANVAS (MOBILE ONLY) ===== -->
+    <div class="offcanvas offcanvas-start bg-dark text-white w-100" tabindex="-1" id="mobileCanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <div class="offcanvas-body mobile-menu">
+
+            <!-- Mobile Accordion -->
+            <div class="accordion mobile-accordion accordion-flush" id="mobileAccordion">
+
+                <!-- ERP Services Accordion -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#erpCollapse">
+                            ERP Services
+                        </button>
+                    </h2>
+                    <div id="erpCollapse" class="accordion-collapse collapse" data-bs-parent="#mobileAccordion">
+                        <div class="accordion-body">
+                            <a href="service.php" class="mobile-submenu-link">
+                                <i class="fas fa-chart-line"></i> Complete ERP Solutions
+                            </a>
+                            <!-- Add more ERP submenu items here in future -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Our Service Accordion -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#serviceCollapse">
+                            Our Service
+                        </button>
+                    </h2>
+                    <div id="serviceCollapse" class="accordion-collapse collapse" data-bs-parent="#mobileAccordion">
+                        <div class="accordion-body">
+
+                            <div class="mobile-submenu-title">Software Solutions</div>
+                            <a href="#" class="mobile-submenu-link">
+                                <i class="fas fa-angle-right"></i> Web Development
+                            </a>
+                            <a href="#" class="mobile-submenu-link">
+                                <i class="fas fa-angle-right"></i> App Development
+                            </a>
+                            <a href="#" class="mobile-submenu-link">
+                                <i class="fas fa-angle-right"></i> Custom Software Development
+                            </a>
+                            <a href="#" class="mobile-submenu-link">
+                                <i class="fas fa-angle-right"></i> Cloud Solution
+                            </a>
+                            <a href="#" class="mobile-submenu-link">
+                                <i class="fas fa-angle-right"></i> DevOps Solution
+                            </a>
+                            <a href="#" class="mobile-submenu-link">
+                                <i class="fas fa-angle-right"></i> UI/UX Design Service
+                            </a>
+                            <a href="#" class="mobile-submenu-link">
+                                <i class="fas fa-angle-right"></i> Digital Marketing Service
+                            </a>
+
+                            <div class="mobile-submenu-title">Advance Technology</div>
+                            <a href="#" class="mobile-submenu-link">
+                                <i class="fas fa-angle-right"></i> Blockchain and Cryptocurrency
+                            </a>
+                            <a href="#" class="mobile-submenu-link">
+                                <i class="fas fa-angle-right"></i> Artificial Intelligence
+                            </a>
+                            <a href="#" class="mobile-submenu-link">
+                                <i class="fas fa-angle-right"></i> Machine Learning
+                            </a>
+                            <a href="#" class="mobile-submenu-link">
+                                <i class="fas fa-angle-right"></i> Data Science
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Industry Accordion -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#industryCollapse">
+                            Industry
+                        </button>
+                    </h2>
+                    <div id="industryCollapse" class="accordion-collapse collapse" data-bs-parent="#mobileAccordion">
+                        <div class="accordion-body">
+                            <a href="#" class="mobile-submenu-link">
+                                <i class="fas fa-angle-right"></i> Ecommerce and Retail
+                            </a>
+                            <a href="#" class="mobile-submenu-link">
+                                <i class="fas fa-angle-right"></i> Logistics & Transportation
+                            </a>
+                            <a href="#" class="mobile-submenu-link">
+                                <i class="fas fa-angle-right"></i> Real Estate
+                            </a>
+                            <a href="#" class="mobile-submenu-link">
+                                <i class="fas fa-angle-right"></i> Manufacturing
+                            </a>
+                            <a href="#" class="mobile-submenu-link">
+                                <i class="fas fa-angle-right"></i> Education
+                            </a>
+                            <a href="#" class="mobile-submenu-link">
+                                <i class="fas fa-angle-right"></i> Healthcare
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Navigation Links -->
+            <div class="px-3">
+                <a href="#home" class="nav-link-item">
+                    <i class="fas fa-home"></i> Home
+                </a>
+                <a href="#about" class="nav-link-item">
+                    <i class="fas fa-info-circle"></i> About
+                </a>
+                <a href="#contact" class="nav-link-item">
+                    <i class="fas fa-envelope"></i> Contact
+                </a>
+                <a href="#blog" class="nav-link-item">
+                    <i class="fas fa-blog"></i> Blog
+                </a>
+                <a href="#faq" class="nav-link-item">
+                    <i class="fas fa-question-circle"></i> FAQ
+                </a>
+
+                <a class="btn btn-warning rounded-pill px-4 btn-mobile" href="#quote">Schedule A Call</a>
+            </div>
+
+        </div>
+    </div>
+    <!-- ========================================
+     SERVICE DETAILS PAGE - PAGE HEADER
+======================================== -->
+    <section class="srd-page-header">
+        <div class="container">
+            <div class="srd-header-content">
+                <nav class="srd-breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span class="srd-separator">/</span>
+                    <a href="services.html">Services</a>
+                    <span class="srd-separator">/</span>
+                    <span class="srd-current">Custom ERP Development</span>
+                </nav>
+                <h1 class="srd-page-title">Custom ERP Development</h1>
+                <p class="srd-page-subtitle">Tailored enterprise resource planning solutions designed specifically for
+                    your business processes, workflows, and unique requirements.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+     SERVICE DETAILS CONTENT
+======================================== -->
+    <section class="srd-content-section">
+        <div class="container">
+            <div class="row">
+                <!-- Main Content -->
+                <div class="col-lg-8">
+                    <div class="srd-main-content">
+                        <!-- Featured Image -->
+                        <div class="srd-featured-image">
+                            <img src="https://picsum.photos/1200/600?random=40" alt="Custom ERP Development"
+                                class="img-fluid">
+                        </div>
+
+                        <!-- Service Overview -->
+                        <div class="srd-overview">
+                            <h2 class="srd-heading">Service Overview</h2>
+                            <p class="srd-text">Our custom ERP development services are designed to streamline your
+                                business operations, improve efficiency, and drive growth. We understand that every
+                                business is unique, which is why we create tailored solutions that align perfectly with
+                                your specific requirements and workflows.</p>
+                            <p class="srd-text">With over 10 years of experience in ERP development, we have helped
+                                hundreds of businesses across various industries transform their operations through
+                                intelligent, scalable, and user-friendly ERP systems.</p>
+                        </div>
+
+                        <!-- Key Features -->
+                        <div class="srd-features">
+                            <h2 class="srd-heading">Key Features</h2>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="srd-feature-box">
+                                        <div class="srd-feature-icon">
+                                            <i class="bi bi-check-circle"></i>
+                                        </div>
+                                        <h4 class="srd-feature-title">Custom Modules</h4>
+                                        <p class="srd-feature-text">Develop bespoke modules tailored to your specific
+                                            business processes and requirements.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="srd-feature-box">
+                                        <div class="srd-feature-icon">
+                                            <i class="bi bi-check-circle"></i>
+                                        </div>
+                                        <h4 class="srd-feature-title">Seamless Integration</h4>
+                                        <p class="srd-feature-text">Integrate with existing systems and third-party
+                                            applications effortlessly.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="srd-feature-box">
+                                        <div class="srd-feature-icon">
+                                            <i class="bi bi-check-circle"></i>
+                                        </div>
+                                        <h4 class="srd-feature-title">Scalable Architecture</h4>
+                                        <p class="srd-feature-text">Built to grow with your business, supporting
+                                            increasing users and data volumes.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="srd-feature-box">
+                                        <div class="srd-feature-icon">
+                                            <i class="bi bi-check-circle"></i>
+                                        </div>
+                                        <h4 class="srd-feature-title">Real-time Analytics</h4>
+                                        <p class="srd-feature-text">Get instant insights with powerful reporting and
+                                            business intelligence tools.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="srd-feature-box">
+                                        <div class="srd-feature-icon">
+                                            <i class="bi bi-check-circle"></i>
+                                        </div>
+                                        <h4 class="srd-feature-title">Mobile Access</h4>
+                                        <p class="srd-feature-text">Access your ERP system anytime, anywhere with
+                                            responsive mobile applications.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="srd-feature-box">
+                                        <div class="srd-feature-icon">
+                                            <i class="bi bi-check-circle"></i>
+                                        </div>
+                                        <h4 class="srd-feature-title">24/7 Support</h4>
+                                        <p class="srd-feature-text">Round-the-clock technical support to ensure smooth
+                                            operations at all times.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- What We Offer -->
+                        <div class="srd-offer">
+                            <h2 class="srd-heading">What We Offer</h2>
+                            <div class="srd-offer-list">
+                                <div class="srd-offer-item">
+                                    <div class="srd-offer-icon">
+                                        <i class="bi bi-diagram-3"></i>
+                                    </div>
+                                    <div class="srd-offer-content">
+                                        <h4 class="srd-offer-title">Requirement Analysis & Consultation</h4>
+                                        <p class="srd-offer-text">We begin with comprehensive analysis of your business
+                                            processes, pain points, and objectives to design the perfect ERP solution.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="srd-offer-item">
+                                    <div class="srd-offer-icon">
+                                        <i class="bi bi-code-square"></i>
+                                    </div>
+                                    <div class="srd-offer-content">
+                                        <h4 class="srd-offer-title">Custom Module Development</h4>
+                                        <p class="srd-offer-text">Create specialized modules for inventory management,
+                                            accounting, HR, CRM, and more, tailored to your needs.</p>
+                                    </div>
+                                </div>
+                                <div class="srd-offer-item">
+                                    <div class="srd-offer-icon">
+                                        <i class="bi bi-link-45deg"></i>
+                                    </div>
+                                    <div class="srd-offer-content">
+                                        <h4 class="srd-offer-title">System Integration</h4>
+                                        <p class="srd-offer-text">Seamlessly integrate with your existing software,
+                                            databases, and third-party services for unified operations.</p>
+                                    </div>
+                                </div>
+                                <div class="srd-offer-item">
+                                    <div class="srd-offer-icon">
+                                        <i class="bi bi-person-workspace"></i>
+                                    </div>
+                                    <div class="srd-offer-content">
+                                        <h4 class="srd-offer-title">Training & Documentation</h4>
+                                        <p class="srd-offer-text">Comprehensive training for your team and detailed
+                                            documentation to ensure smooth adoption and usage.</p>
+                                    </div>
+                                </div>
+                                <div class="srd-offer-item">
+                                    <div class="srd-offer-icon">
+                                        <i class="bi bi-shield-check"></i>
+                                    </div>
+                                    <div class="srd-offer-content">
+                                        <h4 class="srd-offer-title">Maintenance & Support</h4>
+                                        <p class="srd-offer-text">Ongoing support, updates, and maintenance to keep your
+                                            ERP system running optimally at all times.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Benefits -->
+                        <div class="srd-benefits">
+                            <h2 class="srd-heading">Benefits You'll Get</h2>
+                            <div class="srd-benefits-grid">
+                                <div class="srd-benefit-item">
+                                    <i class="bi bi-graph-up-arrow"></i>
+                                    <h5>Increased Efficiency</h5>
+                                    <p>Automate routine tasks and streamline workflows for maximum productivity.</p>
+                                </div>
+                                <div class="srd-benefit-item">
+                                    <i class="bi bi-piggy-bank"></i>
+                                    <h5>Cost Reduction</h5>
+                                    <p>Reduce operational costs through improved resource management and automation.</p>
+                                </div>
+                                <div class="srd-benefit-item">
+                                    <i class="bi bi-eye"></i>
+                                    <h5>Better Visibility</h5>
+                                    <p>Get real-time insights into all aspects of your business operations.</p>
+                                </div>
+                                <div class="srd-benefit-item">
+                                    <i class="bi bi-shield-lock"></i>
+                                    <h5>Data Security</h5>
+                                    <p>Enterprise-grade security to protect your sensitive business information.</p>
+                                </div>
+                                <div class="srd-benefit-item">
+                                    <i class="bi bi-speedometer2"></i>
+                                    <h5>Faster Decisions</h5>
+                                    <p>Make informed decisions quickly with accurate, real-time data at your fingertips.
+                                    </p>
+                                </div>
+                                <div class="srd-benefit-item">
+                                    <i class="bi bi-arrow-up-right-circle"></i>
+                                    <h5>Scalable Growth</h5>
+                                    <p>Scale your operations seamlessly as your business grows and evolves.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Process -->
+                        <div class="srd-process">
+                            <h2 class="srd-heading">Our Development Process</h2>
+                            <div class="srd-timeline">
+                                <div class="srd-timeline-item">
+                                    <div class="srd-timeline-marker">1</div>
+                                    <div class="srd-timeline-content">
+                                        <h4 class="srd-timeline-title">Discovery & Analysis</h4>
+                                        <p class="srd-timeline-text">Understanding your business requirements,
+                                            workflows, and objectives through detailed consultation.</p>
+                                    </div>
+                                </div>
+                                <div class="srd-timeline-item">
+                                    <div class="srd-timeline-marker">2</div>
+                                    <div class="srd-timeline-content">
+                                        <h4 class="srd-timeline-title">Design & Planning</h4>
+                                        <p class="srd-timeline-text">Creating comprehensive system architecture, UI/UX
+                                            designs, and project roadmap.</p>
+                                    </div>
+                                </div>
+                                <div class="srd-timeline-item">
+                                    <div class="srd-timeline-marker">3</div>
+                                    <div class="srd-timeline-content">
+                                        <h4 class="srd-timeline-title">Development & Testing</h4>
+                                        <p class="srd-timeline-text">Building custom modules with rigorous testing at
+                                            every stage to ensure quality.</p>
+                                    </div>
+                                </div>
+                                <div class="srd-timeline-item">
+                                    <div class="srd-timeline-marker">4</div>
+                                    <div class="srd-timeline-content">
+                                        <h4 class="srd-timeline-title">Deployment & Training</h4>
+                                        <p class="srd-timeline-text">Smooth deployment with comprehensive training for
+                                            your team to ensure successful adoption.</p>
+                                    </div>
+                                </div>
+                                <div class="srd-timeline-item">
+                                    <div class="srd-timeline-marker">5</div>
+                                    <div class="srd-timeline-content">
+                                        <h4 class="srd-timeline-title">Support & Maintenance</h4>
+                                        <p class="srd-timeline-text">Ongoing support, updates, and enhancements to keep
+                                            your system optimized.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ -->
+                        <div class="srd-faq">
+                            <h2 class="srd-heading">Frequently Asked Questions</h2>
+                            <div class="accordion srd-accordion" id="serviceFAQ">
+                                <div class="accordion-item srd-accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button srd-accordion-btn" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faq1">
+                                            How long does it take to develop a custom ERP system?
+                                        </button>
+                                    </h2>
+                                    <div id="faq1" class="accordion-collapse collapse show"
+                                        data-bs-parent="#serviceFAQ">
+                                        <div class="accordion-body srd-accordion-body">
+                                            The timeline varies based on complexity and requirements. Typically, a
+                                            custom ERP system takes 3-6 months for small to medium businesses, and 6-12
+                                            months for larger enterprises with complex needs.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item srd-accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button srd-accordion-btn collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faq2">
+                                            Can you integrate with our existing systems?
+                                        </button>
+                                    </h2>
+                                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#serviceFAQ">
+                                        <div class="accordion-body srd-accordion-body">
+                                            Yes, we specialize in seamless integration with existing systems, databases,
+                                            and third-party applications to ensure unified operations across your
+                                            organization.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item srd-accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button srd-accordion-btn collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faq3">
+                                            What kind of support do you provide after deployment?
+                                        </button>
+                                    </h2>
+                                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#serviceFAQ">
+                                        <div class="accordion-body srd-accordion-body">
+                                            We provide 24/7 technical support, regular updates, bug fixes, and system
+                                            enhancements to ensure your ERP system runs smoothly and continues to meet
+                                            your evolving needs.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item srd-accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button srd-accordion-btn collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faq4">
+                                            Is the system scalable as our business grows?
+                                        </button>
+                                    </h2>
+                                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#serviceFAQ">
+                                        <div class="accordion-body srd-accordion-body">
+                                            Absolutely! Our ERP systems are built with scalability in mind, allowing you
+                                            to add new users, modules, and features as your business expands without
+                                            major overhauls.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <aside class="srd-sidebar">
+                        <!-- Contact Widget -->
+                        <div class="srd-widget srd-contact-widget">
+                            <h4 class="srd-widget-title">Need Consultation?</h4>
+                            <p class="srd-contact-text">Get in touch with our experts to discuss your project
+                                requirements.</p>
+                            <div class="srd-contact-info">
+                                <div class="srd-contact-item">
+                                    <i class="bi bi-telephone"></i>
+                                    <span>+012 345 6789</span>
+                                </div>
+                                <div class="srd-contact-item">
+                                    <i class="bi bi-envelope"></i>
+                                    <span>info@bexily.com</span>
+                                </div>
+                            </div>
+                            <a href="#quote" class="btn srd-contact-btn">Schedule A Call</a>
+                        </div>
+
+                        <!-- Services List Widget -->
+                        <div class="srd-widget">
+                            <h4 class="srd-widget-title">Our Services</h4>
+                            <ul class="srd-services-list">
+                                <li><a href="service-details.html" class="active"><i class="bi bi-chevron-right"></i>
+                                        Custom ERP Development</a></li>
+                                <li><a href="service-details.html"><i class="bi bi-chevron-right"></i> Web
+                                        Development</a></li>
+                                <li><a href="service-details.html"><i class="bi bi-chevron-right"></i> Mobile App
+                                        Development</a></li>
+                                <li><a href="service-details.html"><i class="bi bi-chevron-right"></i> Cloud
+                                        Solutions</a></li>
+                                <li><a href="service-details.html"><i class="bi bi-chevron-right"></i> UI/UX Design</a>
+                                </li>
+                                <li><a href="service-details.html"><i class="bi bi-chevron-right"></i> Digital
+                                        Marketing</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Download Brochure Widget -->
+                        <div class="srd-widget srd-download-widget">
+                            <h4 class="srd-widget-title">Download Resources</h4>
+                            <a href="#" class="srd-download-btn">
+                                <i class="bi bi-file-pdf"></i>
+                                <span>Service Brochure PDF</span>
+                                <i class="bi bi-download ms-auto"></i>
+                            </a>
+                            <a href="#" class="srd-download-btn">
+                                <i class="bi bi-file-earmark-text"></i>
+                                <span>Case Studies</span>
+                                <i class="bi bi-download ms-auto"></i>
+                            </a>
+                        </div>
+
+                        <!-- Quick Stats Widget -->
+                        <div class="srd-widget srd-stats-widget">
+                            <h4 class="srd-widget-title">Service Stats</h4>
+                            <div class="srd-stats">
+                                <div class="srd-stat-item">
+                                    <h3 class="srd-stat-number">150+</h3>
+                                    <p class="srd-stat-label">Projects Completed</p>
+                                </div>
+                                <div class="srd-stat-item">
+                                    <h3 class="srd-stat-number">98%</h3>
+                                    <p class="srd-stat-label">Client Satisfaction</p>
+                                </div>
+                                <div class="srd-stat-item">
+                                    <h3 class="srd-stat-number">24/7</h3>
+                                    <p class="srd-stat-label">Support Available</p>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+     RELATED SERVICES
+======================================== -->
+    <section class="srd-related-section">
+        <div class="container">
+            <h3 class="srd-related-title">Related Services</h3>
+            <div class="row g-4">
+                <!-- Related Service 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="srd-related-card">
+                        <div class="srd-related-icon">
+                            <i class="bi bi-cloud"></i>
+                        </div>
+                        <h4 class="srd-related-title-text">Cloud Solutions</h4>
+                        <p class="srd-related-desc">Scalable cloud infrastructure and services to modernize your IT
+                            operations.</p>
+                        <a href="service-details.html" class="srd-related-link">Learn More <i
+                                class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+
+                <!-- Related Service 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="srd-related-card">
+                        <div class="srd-related-icon">
+                            <i class="bi bi-cpu"></i>
+                        </div>
+                        <h4 class="srd-related-title-text">Artificial Intelligence</h4>
+                        <p class="srd-related-desc">AI-powered solutions to automate processes and unlock business
+                            insights.</p>
+                        <a href="service-details.html" class="srd-related-link">Learn More <i
+                                class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+
+                <!-- Related Service 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="srd-related-card">
+                        <div class="srd-related-icon">
+                            <i class="bi bi-bar-chart"></i>
+                        </div>
+                        <h4 class="srd-related-title-text">Data Science</h4>
+                        <p class="srd-related-desc">Transform raw data into actionable insights with advanced analytics.
+                        </p>
+                        <a href="service-details.html" class="srd-related-link">Learn More <i
+                                class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+     CTA SECTION
+======================================== -->
+    <section class="srd-cta-section">
+        <div class="container">
+            <div class="srd-cta-wrapper">
+                <h3 class="srd-cta-title">Ready to Transform Your Business with Custom ERP?</h3>
+                <p class="srd-cta-text">Let's discuss your requirements and create a solution that drives real results.
+                </p>
+                <a href="#quote" class="btn srd-cta-btn">Get Started Today <i class="bi bi-arrow-right ms-2"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+     FOOTER
+======================================== -->
+    <footer class="footer footer-bg" id="contact">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Company Info -->
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <img src="assets/images/bexily-new-logo.png" alt="" srcset="" class="navbar-logo" />
+                    </div>
+                    <p class="footer-desc text-white">Kolkata's leading ERP software development company delivering
+                        intelligent,
+                        scalable solutions tailored to your business needs. Over 10 years of excellence.</p>
+                    <div class="mt-4">
+                        <p class="mb-2 text-white"><i class="bi bi-geo-alt me-2"></i>123 Street, New York, USA</p>
+                        <p class="mb-2 text-white"><i class="bi bi-telephone me-2"></i>+012 345 6789</p>
+                        <p class="mb-0 text-white"><i class="bi bi-envelope me-2"></i>info@example.com</p>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="footer-title">Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#industry">Industries</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="footer-title">Our Services</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Custom ERP Development</a></li>
+                        <li><a href="#">ERP Integration</a></li>
+                        <li><a href="#">ERP Migration</a></li>
+                        <li><a href="#">Maintenance & Support</a></li>
+                        <li><a href="#">Cloud ERP Solutions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Industries -->
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="footer-title">Industries</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Textile Industry</a></li>
+                        <li><a href="#">Garment Manufacturing</a></li>
+                        <li><a href="#">Finance & Accounting</a></li>
+                        <li><a href="#">Healthcare</a></li>
+                        <li><a href="#">Manufacturing</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom text-white">
+                <p>&copy; 2026 Bexily. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script>
+        const header = document.querySelector(".cx-main-header");
+        const mobileBtn = document.querySelector(".mobile-get-started");
+        const fullLogo = document.querySelector(".full-logo");
+        const mobileLogo = document.querySelector(".mobile-logo");
+
+        window.addEventListener("scroll", () => {
+            const isMobile = window.innerWidth < 992;
+            if (!isMobile) return;
+
+            if (window.scrollY >= 150) {
+                header.classList.add("cx-header-sticky");
+                mobileBtn.classList.add("show");
+
+                fullLogo.style.display = "none";
+                mobileLogo.style.display = "block";
+            } else {
+                header.classList.remove("cx-header-sticky");
+                mobileBtn.classList.remove("show");
+
+                fullLogo.style.display = "block";
+                mobileLogo.style.display = "none";
+            }
+        });
+    </script> -->
+    <script>
+        const header = document.querySelector(".cx-main-header");
+        const mobileBtn = document.querySelector(".mobile-get-started");
+        const fullLogo = document.querySelector(".full-logo");
+        const mobileLogo = document.querySelector(".mobile-logo");
+
+        let lastScrollTop = 0;
+
+        window.addEventListener("scroll", () => {
+            const isMobile = window.innerWidth < 992;
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (isMobile) {
+                // Mobile behavior (existing code)
+                if (scrollTop >= 150) {
+                    header.classList.add("cx-header-sticky");
+                    mobileBtn.classList.add("show");
+                    fullLogo.style.display = "none";
+                    mobileLogo.style.display = "block";
+                } else {
+                    header.classList.remove("cx-header-sticky");
+                    mobileBtn.classList.remove("show");
+                    fullLogo.style.display = "block";
+                    mobileLogo.style.display = "none";
+                }
+            } else {
+                // Desktop behavior - hide on scroll down, show on scroll up
+                if (scrollTop > lastScrollTop && scrollTop > 100) {
+                    // Scrolling down
+                    header.classList.add("cx-header-hidden");
+                    header.classList.remove("cx-header-visible");
+                } else {
+                    // Scrolling up
+                    header.classList.remove("cx-header-hidden");
+                    header.classList.add("cx-header-visible");
+                }
+            }
+
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+    </script>
+    <script>
+        // FAQ Hover Open Feature with Smooth Transition
+        document.addEventListener('DOMContentLoaded', function () {
+            const faqItems = document.querySelectorAll('.faq-item-pro');
+            let hoverTimeout;
+
+            faqItems.forEach(item => {
+                item.addEventListener('mouseenter', function () {
+                    clearTimeout(hoverTimeout);
+
+                    hoverTimeout = setTimeout(() => {
+                        const button = this.querySelector('.accordion-button');
+                        const target = button.getAttribute('data-bs-target');
+                        const collapse = document.querySelector(target);
+
+                        if (button.classList.contains('collapsed')) {
+                            // Smooth open with Bootstrap's built-in animation
+                            const bsCollapse = new bootstrap.Collapse(collapse, {
+                                toggle: true
+                            });
+                        }
+                    }, 200);
+                });
+
+                item.addEventListener('mouseleave', function () {
+                    clearTimeout(hoverTimeout);
+                });
+            });
+        });
+    </script>
+</body>
+
+
+</html>
