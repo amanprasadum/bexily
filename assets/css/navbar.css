@@ -81,6 +81,13 @@
     .cx-header-visible {
         transform: translateY(0);
     }
+
+    .navbar-logo {
+        background-color: #f3f3f3;
+        padding: 6px 20px;
+        width: 180px;
+        border-radius: 9px;
+    }
 }
 
 /* Mobile sticky behavior (unchanged) */
@@ -93,6 +100,7 @@
         from {
             transform: translateY(-100%);
         }
+
         to {
             transform: translateY(0);
         }
@@ -378,6 +386,7 @@
         transition: opacity 0.3s ease;
     }
 }
+
 /*mega menu hover indicator*/
 /*.navbar .dropdown:hover > .nav-link {*/
 /*    color: #fbbf24 !important;*/
@@ -385,7 +394,7 @@
 /*    border-radius: 8px;*/
 /*}*/
 
-.navbar .dropdown:hover > .nav-link {
+.navbar .dropdown:hover>.nav-link {
     color: #fbbf24 !important;
     font-weight: 600;
     transform: scale(1.05);
