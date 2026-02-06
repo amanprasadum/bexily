@@ -1,15 +1,10 @@
 /* ========================================
    NAVIGATION STYLES 
 ======================================== */
-/* .navbar-logo {
+.navbar-logo {
     width: 173px;
-} */
-.navbar-logo{
-    background-color: #f3f3f3;
-    padding: 6px 20px;
-    width: 180px;
-    border-radius: 9px;
 }
+
 .top-bar {
     background: var(--primary-dark);
     color: var(--white);
