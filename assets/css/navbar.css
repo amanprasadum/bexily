@@ -5,6 +5,13 @@
     width: 173px;
 }
 
+.footer-brand img.navbar-logo {
+    background-color: #f3f3f3;
+    padding: 6px 20px;
+    width: 180px;
+    border-radius: 9px;
+}
+
 .top-bar {
     background: var(--primary-dark);
     color: var(--white);
@@ -82,12 +89,7 @@
         transform: translateY(0);
     }
 
-    .navbar-logo {
-        background-color: #f3f3f3;
-        padding: 6px 20px;
-        width: 180px;
-        border-radius: 9px;
-    }
+
 }
 
 /* Mobile sticky behavior (unchanged) */
