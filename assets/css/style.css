@@ -2338,6 +2338,32 @@
         margin-right: 12px;
     }
 
+    /* Social Icons */
+    .social-icons {
+        display: flex;
+        gap: 12px;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.1);
+        color: #fff;
+        border-radius: 8px;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        text-decoration: none;
+    }
+
+    .social-icon:hover {
+        background: var(--accent-yellow);
+        color: var(--primary-dark);
+        transform: translateY(-3px);
+    }
+
     /* ========================================
    BUTTONS
 ======================================== */
